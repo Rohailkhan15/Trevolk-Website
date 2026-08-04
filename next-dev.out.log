@@ -1,0 +1,35 @@
+▲ Next.js 16.2.12 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.22.224.1:3000
+✓ Ready in 5.8s
+Creating turbopack project { dir: 'E:\\My projects 3\\trevolk-website', testMode: true }
+
+ GET / 200 in 7.7s (next.js: 1338ms, application-code: 6.3s)
+ GET /projects 200 in 4.4s (next.js: 326ms, application-code: 4.1s)
+ GET /about 200 in 506ms (next.js: 242ms, application-code: 264ms)
+ GET / 200 in 4.1s (next.js: 30ms, application-code: 4.0s)
+  Reload env: .env.local
+✓ Compiled in 110ms
+ GET / 200 in 4.1s (next.js: 90ms, application-code: 4.0s)
+ GET / 200 in 4.1s (next.js: 17ms, application-code: 4.1s)
+ GET / 200 in 4.7s (next.js: 387ms, application-code: 4.3s)
+ GET / 200 in 5.2s (next.js: 359ms, application-code: 4.9s)
+ GET / 200 in 4.2s (next.js: 174ms, application-code: 4.0s)
+ GET / 200 in 4.7s (next.js: 16ms, application-code: 4.7s)
+✓ Compiled in 151ms
+○ Compiling /_error ...
+ GET / 500 in 6.5s (next.js: 6.0s, application-code: 502ms)
+ GET / 500 in 3.1s (next.js: 1788ms, application-code: 1331ms)
+ GET / 500 in 1390ms (next.js: 1361ms, application-code: 28ms)
+ GET / 500 in 1556ms (next.js: 17ms, application-code: 1538ms)
+  Reload env: .env.local
+✓ Compiled in 139ms
+ GET / 200 in 4.9s (next.js: 428ms, application-code: 4.4s)
+ GET / 200 in 4.1s (next.js: 17ms, application-code: 4.1s)
+ GET / 200 in 98ms (next.js: 34ms, application-code: 64ms)
+ GET / 200 in 4.2s (next.js: 39ms, application-code: 4.2s)
+ GET /projects 200 in 4.5s (next.js: 544ms, application-code: 3.9s)
+ GET /about 200 in 466ms (next.js: 304ms, application-code: 162ms)
+ GET / 200 in 4.1s (next.js: 26ms, application-code: 4.0s)
+ GET / 200 in 103ms (next.js: 41ms, application-code: 62ms)
+ GET / 200 in 4.1s (next.js: 37ms, application-code: 4.1s)

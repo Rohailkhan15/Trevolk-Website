@@ -1,0 +1,1020 @@
+npm notice run trevolk-website@0.1.0 dev
+npm notice run next dev --port 3000
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getAllProjects (app\projects\page.js:14:35)
+    at ProjectsPage (app\projects\page.js:148:26)
+  12 | async function getAllProjects() {
+  13 |   try {
+> 14 |     const projects = await client.fetch(projectsQuery);
+     |                                   ^
+  15 |     return projects;
+  16 |   } catch (error) {
+  17 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getAllProjects (app\projects\page.js:14:35)
+        at ProjectsPage (app\projects\page.js:148:26)
+      12 | async function getAllProjects() {
+      13 |   try {
+    > 14 |     const projects = await client.fetch(projectsQuery);
+         |                                   ^
+      15 |     return projects;
+      16 |   } catch (error) {
+      17 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://E:/My projects 3/trevolk-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/image-component.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01',
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+⨯ Error: Configuration must contain `projectId`
+    at module evaluation (lib\sanity.js:3:35)
+    at module evaluation (app\page.js:3:1)
+    at module evaluation (E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+  1 | import { createClient } from '@sanity/client'
+  2 |
+> 3 | export const client = createClient({
+    |                                   ^
+  4 |   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,    // replace with your actual proj...
+  5 |   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  6 |   apiVersion: '2024-01-01', {
+  page: '/'
+}
+[browser] Uncaught Error: Configuration must contain `projectId`
+    at initConfig (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:17387:53)
+    at SanityClient.config (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:19651:91)
+    at new SanityClient (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:19624:14)
+    at createClient (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:19871:20)
+    at module evaluation (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:43:211)
+    at module evaluation (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:67:139)
+    at module evaluation (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\[root-of-the-server]__0g8xena._.js:1123:47)
+    at Array.__TURBOPACK__page__$23$6__ (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:19946:62)
+    at async doRender (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:20493:28)
+    at async handleResponse (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:20804:32)
+    at async Module.handler (file://E:\My projects 3\trevolk-website\.next\dev\server\chunks\ssr\node_modules_149z6ka._.js:21210:20)
+⚠ Fast Refresh had to perform a full reload when ./node_modules/next/dist/client/index.js changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.117.101.53:443
+      at <unknown> (Error: connect EACCES 34.117.101.53:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.117.101.53',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.117.101.53:443
+      at <unknown> (Error: connect EACCES 34.117.101.53:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.117.101.53',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getAllProjects (app\projects\page.js:14:35)
+    at ProjectsPage (app\projects\page.js:148:26)
+  12 | async function getAllProjects() {
+  13 |   try {
+> 14 |     const projects = await client.fetch(projectsQuery);
+     |                                   ^
+  15 |     return projects;
+  16 |   } catch (error) {
+  17 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getAllProjects (app\projects\page.js:14:35)
+        at ProjectsPage (app\projects\page.js:148:26)
+      12 | async function getAllProjects() {
+      13 |   try {
+    > 14 |     const projects = await client.fetch(projectsQuery);
+         |                                   ^
+      15 |     return projects;
+      16 |   } catch (error) {
+      17 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior (file://E:/My projects 3/trevolk-website/.next/dev/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489:13)
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
+Error fetching projects: TypeError: fetch failed
+    at getFeaturedProjects (app\page.js:15:35)
+    at Home (app\page.js:384:26)
+  13 | async function getFeaturedProjects() {
+  14 |   try {
+> 15 |     const projects = await client.fetch(featuredProjectsQuery);
+     |                                   ^
+  16 |     return projects;
+  17 |   } catch (error) {
+  18 |     console.error("Error fetching projects:", error); {
+  isNetworkError: true,
+  request: {
+    timeout: { connect: 300000, socket: 300000 },
+    maxRedirects: 0,
+    maxRetries: undefined,
+    retryDelay: undefined,
+    lineage: undefined,
+    method: 'GET',
+    uri: '/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D',
+    json: true,
+    body: undefined,
+    query: { returnQuery: 'false' },
+    headers: { Accept: 'application/json' },
+    token: undefined,
+    tag: undefined,
+    returnQuery: false,
+    perspective: undefined,
+    variant: undefined,
+    resultSourceMap: undefined,
+    lastLiveEventId: undefined,
+    cacheMode: undefined,
+    canUseCdn: true,
+    signal: undefined,
+    fetch: undefined,
+    useAbortSignal: false,
+    useCdn: undefined,
+    url: 'https://sjzcpehp.apicdn.sanity.io/v2024-01-01/data/query/production?query=*%5B_type+%3D%3D+%22project%22%5D%5B0...2%5D%7B%0A++title%2C%0A++description%2C%0A++githubLink%2C%0A++liveLink%2C%0A++techStack%0A%7D&returnQuery=false',
+    callSiteStack: Error: 
+        at getFeaturedProjects (app\page.js:15:35)
+        at Home (app\page.js:384:26)
+      13 | async function getFeaturedProjects() {
+      14 |   try {
+    > 15 |     const projects = await client.fetch(featuredProjectsQuery);
+         |                                   ^
+      16 |     return projects;
+      17 |   } catch (error) {
+      18 |     console.error("Error fetching projects:", error);,
+    proxy: undefined,
+    withCredentials: false,
+    attemptNumber: 5
+  },
+  [cause]: Error: connect EACCES 34.49.206.188:443
+      at <unknown> (Error: connect EACCES 34.49.206.188:443) {
+    errno: -4092,
+    code: 'EACCES',
+    syscall: 'connect',
+    address: '34.49.206.188',
+    port: 443
+  }
+}
