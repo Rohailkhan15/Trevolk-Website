@@ -41,5 +41,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-trevolk_website_plan
-startup_document_2
+trevolk_website_plan.md
+startup_document_2.md
