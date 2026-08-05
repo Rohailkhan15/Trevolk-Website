@@ -156,11 +156,11 @@ export default function AboutPage() {
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-neon-purple/5 rounded-full blur-[140px]" />
       <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-neon-magenta/5 rounded-full blur-[150px]" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-29 pb-24">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-28 pb-24">
         {/* Back Link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-neon-blue transition-colors mb-5 group"
+          className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-neon-blue transition-colors mb-9 group"
         >
           <ArrowLeftIcon />
           <span className="group-hover:underline">Back to Home</span>
