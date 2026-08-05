@@ -156,11 +156,11 @@ export default function AboutPage() {
       <div className="absolute bottom-20 right-10 w-80 h-80 bg-neon-purple/5 rounded-full blur-[140px]" />
       <div className="absolute top-1/2 right-1/4 w-72 h-72 bg-neon-magenta/5 rounded-full blur-[150px]" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-24">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-29 pb-24">
         {/* Back Link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-neon-blue transition-colors mb-12 group"
+          className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-neon-blue transition-colors mb-5 group"
         >
           <ArrowLeftIcon />
           <span className="group-hover:underline">Back to Home</span>
@@ -194,7 +194,7 @@ export default function AboutPage() {
                 Our Mission
               </h2>
               <p className="text-zinc-300 text-base sm:text-lg leading-relaxed">
-                Help poor, needy, and talented people who can&apos;t afford premium courses and products by giving them access to modern tech education, project support, internships, and opportunities to grow. The startup will also earn to sustain itself and fund this mission.
+                Empowering talented people by giving them access to modern tech education, project support, internships, and opportunities to grow. We believe technology should be a equalizer, not a privilege. Through our work in web development and AI, we build solutions that push boundaries and create real impact.
               </p>
             </div>
           </div>
@@ -238,7 +238,7 @@ export default function AboutPage() {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">2. Own Products</h3>
               <p className="text-zinc-400 leading-relaxed mb-4">
-                We design and launch original online products that solve specific real-world problems for developers, businesses, and creators.
+                We design and launch original online products that solve specific real-world problems.
               </p>
               <ul className="space-y-2 text-sm text-zinc-300">
                 <li className="flex items-center gap-2">

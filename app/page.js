@@ -108,13 +108,7 @@ function HeroSection() {
         <div className="absolute bottom-[30%] left-0 w-64 h-px bg-gradient-to-r from-transparent via-neon-magenta/10 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="animate-fade-in-up inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neon-blue/20 bg-neon-blue/5 mb-8">
-          <SparklesIcon />
-          <span className="text-sm text-neon-blue font-medium tracking-wide">Building the Future with Code & AI</span>
-        </div>
-
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center mt-28">
         {/* Main headline */}
         <h1 className="animate-fade-in-up delay-100 text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight tracking-tight mb-6" style={{ opacity: 0 }}>
           We Build{" "}
@@ -180,14 +174,14 @@ const services = [
     title: "Web Development",
     description:
       "We build modern, responsive, and performant websites and web apps using cutting-edge technologies like Next.js, React, Django, and Node.js.",
-    features: ["Custom Websites", "Web Applications", "API Development", "CMS Integration"],
+    features: ["Custom Websites", "E-commerce Stores", "Client Portals", "SaaS Dashboards"],
   },
   {
     icon: <BotIcon />,
     title: "AI Automations",
     description:
       "We design and deploy intelligent automation workflows that save time and scale operations — from AI-powered content pipelines to smart business tools.",
-    features: ["AI Agents", "Workflow Automation", "Content Pipelines", "Custom Integrations"],
+    features: ["AI Agents", "Lead Qualification", "Content Pipelines", "Customer Support Bots"],
   },
 ];
 

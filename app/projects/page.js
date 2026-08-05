@@ -153,11 +153,11 @@ export default async function ProjectsPage() {
       <div className="absolute top-32 right-20 w-80 h-80 bg-neon-purple/5 rounded-full blur-[140px]" />
       <div className="absolute bottom-40 left-10 w-64 h-64 bg-neon-blue/5 rounded-full blur-[120px]" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-24">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-29 pb-24">
         {/* Back link */}
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-neon-blue transition-colors mb-12 group"
+          className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-neon-blue transition-colors mb-5 group"
         >
           <ArrowLeftIcon />
           <span className="group-hover:underline">Back to Home</span>
