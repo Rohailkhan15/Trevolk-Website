@@ -200,6 +200,50 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* The Team */}
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <span className="text-sm font-semibold text-neon-blue tracking-widest uppercase">
+              The Team
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold mt-2">
+              The <span className="gradient-text">Team</span>
+            </h2>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-8">
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Ishmal Khalid</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="tech-tag">Node.js</span>
+                <span className="tech-tag">Express</span>
+                <span className="tech-tag">REST APIs</span>
+                <span className="tech-tag">AI Automations</span>
+              </div>
+            </div>
+
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Muhammad Musa</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="tech-tag">Node.js</span>
+                <span className="tech-tag">Express</span>
+                <span className="tech-tag">REST APIs</span>
+                <span className="tech-tag">AI Automations</span>
+              </div>
+            </div>
+
+            <div className="glass-card rounded-2xl p-8">
+              <h3 className="text-lg font-bold text-white mb-3">Rohail Khan Shinwari</h3>
+              <div className="flex flex-wrap gap-2">
+                <span className="tech-tag">Python</span>
+                <span className="tech-tag">Django</span>
+                <span className="tech-tag">REST APIs</span>
+                <span className="tech-tag">AI Automations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* What We Do */}
         <div className="mb-20">
           <div className="text-center mb-12">

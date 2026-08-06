@@ -123,7 +123,7 @@ function HeroSection() {
         <div className="animate-fade-in-up delay-500 mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto" style={{ opacity: 0 }}>
           {[
             { number: "2+", label: "Projects" },
-            { number: "3", label: "Co-Founders" },
+            { number: "3", label: "Team Members" },
             { number: "2", label: "Core Services" },
           ].map((stat, i) => (
             <div key={i} className="text-center">
