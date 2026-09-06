@@ -184,7 +184,7 @@ function FeaturedProjectsSection({ projects }) {
         {projects.length > 0 ? (
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {projects.map((project, i) => (
-              <ProjectCard key={i} project={project} index={i} />
+              <ProjectCard key={i} project={project} index={i} tall />
             ))}
           </div>
         ) : (
