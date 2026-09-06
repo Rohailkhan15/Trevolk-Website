@@ -197,6 +197,32 @@ html {
   transform: translateY(-4px);
 }
 
+/* FAQ accordion */
+.faq-item {
+  overflow: hidden;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item[open] {
+  border-color: var(--card-hover-border);
+  box-shadow: var(--glow-blue);
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-icon {
+  transition: transform 0.25s ease;
+}
+
+.faq-answer {
+  animation: fade-in-up 0.25s ease-out;
+}
+
 /* Grid background pattern */
 .grid-bg {
   background-image:

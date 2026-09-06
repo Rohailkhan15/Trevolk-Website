@@ -208,6 +208,100 @@ function FeaturedProjectsSection({ projects }) {
   );
 }
 
+/* Frequently Asked Questions Section */
+
+const faqs = [
+  {
+    question: "What exactly is an AI customer support chatbot?",
+    answer:
+      "A smart assistant on your website or store that answers customer questions instantly - order status, shipping, FAQs - using your real business data, not guesses.",
+  },
+  {
+    question: "Will it give customers wrong or made-up answers?",
+    answer:
+      "No. It only answers using your actual store data and policies. If it doesn't know something, it says so or hands off to a human - it never makes things up.",
+  },
+  {
+    question: "Can it handle refunds or payments?",
+    answer:
+      "Not yet - v1 focuses on order status, shipping/returns info, and product questions. Sensitive actions like refunds stay with your team for safety.",
+  },
+  {
+    question: "Will this replace me answering messages on Instagram/WhatsApp?",
+    answer:
+      "It won't replace you, it'll filter you. Repetitive questions get answered instantly, so you only step in for the ones that actually need you.",
+  },
+  {
+    question: "Do I need a website to use your AI chatbot automation?",
+    answer:
+      "No. Many small sellers run their whole business through Instagram DMs with no website, and we build for them too. Our chatbot automation can work on your website, Instagram, or WhatsApp - wherever your customers already message you.",
+  },
+  {
+    question: "Do you also build websites?",
+    answer: "Yes. We build fast, modern websites for your business, store or brand.",
+  },
+  {
+    question: "How long does it take and what's the process?",
+    answer:
+      "We start with a quick discovery call to understand your business, then build and customize a solution around your real workflow - no generic templates.",
+  },
+];
+
+function PlusIcon() {
+  return (
+    <svg className="faq-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <line x1="12" y1="5" x2="12" y2="19" />
+      <line x1="5" y1="12" x2="19" y2="12" />
+    </svg>
+  );
+}
+
+function FAQSection() {
+  return (
+    <section id="faqs" className="relative py-20 px-6 section-glow overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-neon-purple/5 blur-[120px]" />
+        <div className="absolute bottom-12 right-8 h-72 w-72 rounded-full bg-neon-blue/5 blur-[140px]" />
+      </div>
+
+      <div className="relative z-10 max-w-4xl mx-auto">
+        <div className="text-center mb-10">
+          <span className="text-sm font-semibold text-neon-blue tracking-widest uppercase">Questions</span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 mb-3">
+            Frequently Asked <span className="gradient-text">Questions</span>
+          </h2>
+          <p className="max-w-2xl mx-auto text-zinc-400 text-base sm:text-lg">
+            Clear answers about our AI chatbot automation, websites, and how we work with your real business workflow.
+          </p>
+        </div>
+
+        <div className="space-y-3">
+          {faqs.map((faq, i) => (
+            <details key={faq.question} className="faq-item glass-card rounded-2xl group">
+              <summary className="flex cursor-pointer list-none items-center gap-4 p-5 sm:p-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background">
+                <span className="hidden sm:inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-neon-blue/20 bg-neon-blue/5 text-[0.7rem] font-mono text-neon-blue/70">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="flex-1 text-left text-sm sm:text-base font-semibold leading-snug text-white group-hover:text-neon-blue transition-colors">
+                  {faq.question}
+                </span>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-neon-blue/25 text-neon-blue transition-colors group-hover:bg-neon-blue/10">
+                  <PlusIcon />
+                </span>
+              </summary>
+              <div className="faq-answer px-5 pb-5 sm:px-6 sm:pb-6 sm:pl-[4.5rem]">
+                <p className="border-t border-white/10 pt-4 text-sm sm:text-base text-zinc-400 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── CTA Section ─── */
 
 function CTASection() {
@@ -260,6 +354,7 @@ export default async function Home() {
       <HeroSection />
       <ServicesSection services={services} />
       <FeaturedProjectsSection projects={projects} />
+      <FAQSection />
       <CTASection />
     </>
   );
