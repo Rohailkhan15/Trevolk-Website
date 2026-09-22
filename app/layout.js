@@ -81,7 +81,7 @@ function Navbar() {
         <Link href="/" className="flex min-w-0 items-center gap-3">
           <span className="relative flex h-11 w-11 shrink-0 overflow-hidden rounded-lg border border-neon-blue/20 bg-white/5">
             <Image
-              src="/Startup_logo.jpeg"
+              src="/Trevolk_icon.png"
               alt="Trevolk logo"
               width={44}
               height={44}
@@ -123,7 +123,7 @@ function Footer() {
           <Link href="/" className="inline-flex items-center gap-3">
             <span className="relative flex h-9 w-9 overflow-hidden rounded-lg border border-neon-blue/20 bg-white/5">
               <Image
-                src="/Startup_logo.jpeg"
+                src="/Trevolk_icon.png"
                 alt="Trevolk logo"
                 width={36}
                 height={36}
